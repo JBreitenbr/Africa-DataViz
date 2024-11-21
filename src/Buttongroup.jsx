@@ -13,7 +13,7 @@ export const Buttongroup = ({
       height={0.9*16.5}
       width= {2*15}
       stroke="darkgrey"
-      fill={year==d?colorScale(dimsDict[dim]["maxi"]):colorScale(dimsDict[dim]["mini"])}
+      fill={year==d?"lightgrey":"white"}
     ></rect>
-    <text style={year==d?{fill:"white",fontSize:`${0.5*16.5}px`}:{fontSize:`${0.5*16.5}px`}} onClick={()=>setYear(d)} x={(2*i+1.5)*15+6} y={478}>{d}</text></>
+    <text style={{fontSize:`${0.5*16.5}px`}} onClick={()=>setYear(d)} x={(2*i+1.5)*15+6} y={478}>{d}</text></>
   ));
